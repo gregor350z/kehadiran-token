@@ -36,7 +36,7 @@
     const statusEl = document.getElementById("status");
     const headingEl = document.getElementById("heading");
 
-    const isValid = token && masa && now < (masa + 60000); // 1 minit
+    const isValid = token && masa && now < (masa + 10000); // 10 saat
 
     if (isValid) {
       headingEl.textContent = "Token sah.";
